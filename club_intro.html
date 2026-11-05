@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>若海贝斯社 · 活动详情</title>
+    <style>
+        :root {
+            --ink: #12333c;
+            --ink-soft: #35545f;
+            --teal: #0e7c86;
+            --teal-light: #1fa6b8;
+            --line: rgba(14, 124, 134, 0.18);
+            --paper: rgba(255, 255, 255, 0.9);
+            --shadow: 0 10px 30px rgba(8, 55, 64, 0.13);
+        }
+
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            margin: 0;
+            padding: 40px 24px 48px;
+            font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+            line-height: 1.9;
+            color: var(--ink);
+            background-color: #e6f2f4;
+            background-image: url('bcackground1.jpg'); /* 这里按你实际的文件名写的 */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        /* 返回主页按钮 */
+        .back-home {
+            max-width: 1000px;
+            margin: 0 auto 20px;
+            text-align: left;
+        }
+        .back-home a {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(255, 255, 255, 0.94);
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            color: var(--teal);
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(8, 55, 64, 0.1);
+            transition: all 0.25s ease;
+        }
+        .back-home a:hover {
+            background: var(--teal);
+            border-color: var(--teal);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        header {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto 26px;
+            padding: 46px 32px 36px;
+            text-align: center;
+            overflow: hidden;
+            background: linear-gradient(155deg, rgba(255, 255, 255, 0.97) 0%, rgba(224, 245, 248, 0.94) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            inset: 0 0 auto 0;
+            height: 6px;
+            background: linear-gradient(90deg, #0e7c86, #2bb3c7, #7fd8e2);
+        }
+        header h1 {
+            margin: 0;
+            font-family: "Songti SC", "SimSun", Georgia, serif;
+            font-size: clamp(28px, 4vw, 38px);
+            letter-spacing: 0.1em;
+            color: #0b3a44;
+        }
+        header p {
+            margin: 12px 0 0;
+            color: var(--teal);
+            font-size: 14px;
+            letter-spacing: 0.1em;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 0 auto 26px;
+            padding: 34px 36px 30px;
+            background: var(--paper);
+            border: 1px solid rgba(255, 255, 255, 0.72);
+            border-radius: 18px;
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            margin: 0 0 20px;
+            padding-bottom: 14px;
+            border-bottom: 1px dashed var(--line);
+            font-family: "Songti SC", "SimSun", Georgia, serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #0b3a44;
+        }
+
+        h3 {
+            margin: 24px 0 10px;
+            padding-left: 12px;
+            border-left: 4px solid var(--teal-light);
+            font-size: 17px;
+            color: var(--teal);
+        }
+
+        p { margin: 0 0 14px; color: var(--ink-soft); }
+
+        /* 卡片网格展示 */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(8, 55, 64, 0.1);
+        }
+        .card h4 {
+            margin: 0 0 10px;
+            font-size: 16px;
+            color: var(--teal);
+            border-bottom: 1px solid rgba(14, 124, 134, 0.1);
+            padding-bottom: 8px;
+        }
+        .card p { font-size: 14px; margin: 0; }
+
+        @media (max-width: 640px) {
+            body { padding: 20px 14px 32px; }
+            header { padding: 30px 20px; }
+            section { padding: 24px 18px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="back-home">
+    <a href="1.html">← 返回招新主页</a>
+</div>
+
+<header>
+    <h1>活动详情与学期规划</h1>
+    <p>若海贝斯社 · 每周有排练，每月有深挖</p>
+</header>
+
+<section>
+    <h2>学期重点活动时间表</h2>
+    <p>为了让新成员和老成员都能找到属于自己的节奏，我们的活动安排分为“每周固定项目”和“每月专项活动”。</p>
+
+    <h3>每月专项活动预告</h3>
+    <div class="grid">
+        <div class="card">
+            <h4>9月：迎新与设备摸底</h4>
+            <p>新成员见面会、乐队设备认识。教学组带你了解音箱、效果器怎么调，如何避免舞台上啸叫。</p>
+        </div>
+        <div class="card">
+            <h4>10月：律动强化与扒谱周</h4>
+            <p>重点死磕十六分音符和切分音。大家共同选定一首 Funk 或摇滚曲目，开展集体扒谱，并尝试重新编排和声。</p>
+        </div>
+        <div class="card">
+            <h4>11月：校园晚会实战</h4>
+            <p>组建临时演出乐队，从排练室走向真正的舞台。演出组负责整体编排与调度，器材组保障全套设备。</p>
+        </div>
+        <div class="card">
+            <h4>12月：跨校交流与期末复盘</h4>
+            <p>与外校乐队合演切磋，交流演奏技巧。学期末全体聚餐，记录组总结一学期来的排练笔记。</p>
+        </div>
+    </div>
+
+    <h3>每周固定练习安排</h3>
+    <p>
+        <strong>周二晚 19:00-21:00（基础课）</strong>：适合零基础或想巩固根基的同学。前二十分钟跟节拍器走音阶，中间练当周律动，最后半小时围坐合奏。<br>
+        <strong>周四晚 19:00-21:30（进阶排练）</strong>：适合有一定经验或准备上台的同学。主要进行曲目分声部排练、细节抠音色以及与鼓手的配合。<br>
+        <strong>周六下午 14:00-17:00（开放练习）</strong>：排练室全面开放，可随意组队合奏，器材组提供设备借用与技术支持。
+    </p>
+
+    <h3>需要准备什么？</h3>
+    <p>
+        带上你自己的贝斯（如果没有，社团有几把公用的可以登记借用）、拨片、连接线，以及一颗愿意沉下心来感受低频的心。其他的音箱、线材、谱架，社团全都有。
+    </p>
+</section>
+
+<section>
+    <h2>活动场地与环境</h2>
+    <p>
+        我们的主要根据地在<strong>艺术楼四楼排练室</strong>。这里不大，但是隔音效果很好。墙上挂着历届成员用过的线材和留下的手写谱。排练室常备一台键盘和一套完整的鼓，方便随时进行节奏和和声的碰撞。
+    </p>
+</section>
+
+</body>
+</html>
