@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /* 页面整体：柔和薄荷色渐变 + 居中布局 */
+    body {
+        font-family: "Microsoft YaHei", Arial, sans-serif;
+        background: linear-gradient(135deg, #eef7f2, #f9fdfb);
+        color: #2f3b36;
+        text-align: center;
+    }
+
+    /* 必做：.page 样式（除 background-color 外，其余与题目要求完全一致） */
+    .page {
+        display: inline-block;
+        background-color: #E8FFF4;
+        box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+        text-align: left;
+        max-width: 720px;
+    }
+
+    /* 必做：并集选择器 */
+    h1, h2, h3, h4, h5, h6 {
+        color: #2f5d4e;
+        letter-spacing: 1px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    /* 必做：ID 选择器 p#intro —— 放大 + 加粗 + 特殊颜色 */
+    p#intro {
+        font-size: 140%;
+        font-weight: bold;
+        color: #1f8a6b;
+    }
+
+    .intro-text {
+        line-height: 1.7;
+        letter-spacing: 0.5px;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    /* 表格基础样式 */
+    table {
+        width: 100%;
+        background-color: #f2fbf6;
+        font-size: 90%;
+    }
+
+    th {
+        background-color: #d6f2e5;
+        font-weight: bold;
+        text-align: left;
+        line-height: 2.2;
+    }
+
+    td {
+        line-height: 2.0;
+    }
+
+    /* 斑马纹与悬停高亮 */
+    table tr:nth-child(even) {
+        background-color: #e9f9f0;
+    }
+
+    table tr:hover {
+        background-color: #d2f0e2;
+    }
+
+    /* 必做：后代选择器 div table a —— 仅当 div 里的 table 中存在链接时生效 */
+    div table a {
+        font-weight: bold;
+        font-size: 110%;
+        color: #1f6b53;
+    }
+
+    /* 必做：链接伪类 */
+    a:link {
+        color: #2a8f6d;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #6f8f7a;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #17a97f;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: #2f5d8a;
+        text-decoration: underline;
+    }
+
+    /* 必做：带类名的链接 */
+    a.red:link {
+        color: #d1624a;
+    }
+
+    a.red:active {
+        color: #2f4f9a;
+    }
+
+    a.blue:link {
+        color: #3f7fbf;
+    }
+
+    a.blue:active {
+        color: #a53aa4;
+    }
+
+    /* 必做：伪元素 p::first-letter 与 div::first-line */
+    p::first-letter {
+        font-size: 180%;
+        color: #1f8a6b;
+    }
+
+    div::first-line {
+        color: #1f6b53;
+        font-weight: bold;
+    }
+
+    .notice {
+        font-size: 90%;
+        line-height: 1.6;
+    }
+
+    .divider {
+        height: 1px;
+        background: linear-gradient(to right, rgba(47, 93, 78, 0), rgba(47, 93, 78, 0.6), rgba(47, 93, 78, 0));
+    }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+    <!-- ① 顶部标题区 -->
+    <h1 class="center">静夜灯下分享会 · Night Lamp Sharing</h1>
+
+    <div class="divider"></div><br>
+
+    <!-- ② 活动介绍区 -->
+    <div>
+        <h2 id="intro" class="center">本周主题：一盏灯，一本书，一段夜谈</h2>
+
+        <p class="intro-text right">
+            夜色渐深，城市的喧嚣缓缓退去，我们在暖黄的灯下围坐，把白天读到的句子轻轻念给彼此听。
+        </p>
+
+        <p class="intro-text center">
+            现场备有热茶与手冲咖啡，你可以带上最近在读的一本书，与同好在灯下交换阅读心得，让思绪在静夜里慢慢舒展。
+        </p>
+
+        <p id="intro">
+            本次分享会席位有限，报名成功后以短信确认为准，请务必留下可联系的手机号。
+        </p>
+    </div>
+
+    <br><div class="divider"></div><br>
+
+    <!-- ③ 活动报名信息表格区 -->
+    <div>
+        <h3 class="section-title">分享会报名名单</h3>
+
+        <table>
+            <tr>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>分享主题</th>
+                <th>联系方式</th>
+                <th>报名状态</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td><a href="https://example.com/person1">张三</a></td>
+                <td>夜读中的自我对话</td>
+                <td>138****0001</td>
+                <td>已确认席位</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td><a href="https://example.com/person2">李四</a></td>
+                <td>城市与孤独的诗意</td>
+                <td>139****0002</td>
+                <td>待确认</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>王五</td>
+                <td>一盏灯下的旅行文学</td>
+                <td>137****0003</td>
+                <td>候补名单</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>赵六</td>
+                <td>深夜书单：与失眠和解</td>
+                <td>136****0004</td>
+                <td>已确认席位</td>
+            </tr>
+        </table>
+    </div>
+
+    <br><div class="divider"></div><br>
+
+    <!-- ④ 页面链接区 -->
+    <div>
+        <div class="center">
+            <a class="red" href="1.html">查看往期活动照片</a><br>
+            <a class="blue" href="job4.html">在线咨询活动详情</a>
+        </div>
+    </div>
+
+    <br><div class="divider"></div><br>
+
+    <!-- ⑤ 底部公告区 -->
+    <div class="notice">
+        静夜灯下分享会地址：书香路 21 号，地铁三号线“夜读站”B 口出后步行两分钟。<br>
+        活动时间：每周六 19:30 - 21:30，节假日照常举行，无需预约茶位。<br>
+        温馨提醒：请提前十分钟入场，分享环节欢迎自带书签与摘抄本，散场后请轻声离场。
+    </div>
+
+    <br>
+
+</div>
+
+</body>
+</html>
